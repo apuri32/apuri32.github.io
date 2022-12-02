@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Final Project:Projects</title>
+  </head>
+  <body onload="main()">
+    <nav>
+        <i class="material-icons">star_half</i>
+        <a href="index.html" class="home-name"><h1>ARIA PURI</h1></a>
+        <h2 class="home-occupation">Student</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="resume.html" aria-label="Resume">Resume</a></li>
+                <li>|</li>
+                <li class="dropdown">
+                    <a href="projects.html" aria-label="Projects">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="project1.html" aria-label="Project 1">Project 1</a>
+                        <a href="project2.html" aria-label="Project 2">Project 2</a>
+                      </div>
+                </li>
+                <li>|</li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="project1">
+        <h1>Project 1</h1>
+        <canvas id="webgl" width="400" height="300">
+        Please use a browser that supports "canvas"
+        </canvas>
+        <p>
+            Enter an angle to change the fish's rotation point: 
+            <div id= CurAngleDisplay></div> 
+            New Current Angle (-180 < x < +180 deg): 
+            <input id='usrAngle' size=10> 
+            <button type="button" onClick='angleSubmit()'>Submit</button><BR> 
+            <div id= EditBoxOut></div>
+        </p>
+        <hr> 
+        <br>
+            Use the up arrow key to stop the fish's translation and the down arrow key to start it again: <br><br>
+            Use the mouse to drag around the shape in the upper righthand corner:
+            <br>
+            <span id='MouseAtResult'  >   Mouse At: </span> <!-- myMouseMove() modifies this span object -->
+            <br>
+            <span id='MouseDragResult'> Mouse Drag: </span> <!-- myMouseUp() modifies this span object -->
+            <div id='Mouse'> Mouse Drag totals (CVV coords) </div>
+            Use clear to reset the shape:
+                <button type="button" onClick='clearDrag()'>Clear</button>
+        <p>
+           
+        Use the spin buttons to change how quickly the fish rotates and the run/stop button to stop and start rotation:<br>
+          <button type="button" onclick="spinDown()">Spin << </button>
+          <button type="button" onclick="runStop()">Run/Stop</button>
+          <button type="button" onclick="spinUp()">Spin >> </button>
+        </p>
+    </div>
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix-quat03.js"></script>
+        <script src="proj_a_9_final.js"></script>
+
+    
+    <hr>
+    <footer>
+        <br>
+        <table>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Follow</th>
+            </tr>
+            <tr>
+                <td>(815)999-5652</td>
+                <td>ariapuri2024@u.northwestern.edu</td>
+                <td><a href="www.linkedin.com/in/aria-puri-3b9249224" aria-label="linkedin website">LinkedIn</a></td>
+            </tr>
+        </table>
+    </footer>
+  </body>
+</html>

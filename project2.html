@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Final Project:Projects</title>
+  </head>
+  <body onload="main()" onresize="drawResize()">
+    <nav>
+        <i class="material-icons">star_half</i>
+        <a href="index.html" class="home-name"><h1>ARIA PURI</h1></a>
+        <h2 class="home-occupation">Student</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="resume.html" aria-label="Resume">Resume</a></li>
+                <li>|</li>
+                <li class="dropdown">
+                    <a href="projects.html" aria-label="Projects">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="project1.html" aria-label="Project 1">Project 1</a>
+                        <a href="project2.html" aria-label="Project 2">Project 2</a>
+                      </div>
+                </li>
+                <li>|</li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="project2">
+        <h1>Project 2</h1>
+        <canvas id="webgl" width="100" height="600">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <p>
+        <div id= ShapeName></div> 
+        <div>
+            Click the buttons to change the speed of rotation or stop the rotation of the center sphere
+            <br>
+              <button type="button" onclick="spinDown()">Spin  </button>
+              <button type="button" onclick="runStop()">Run/Stop</button>
+              <button type="button" onclick="spinUp()">Spin  </button>
+        
+              <br><br>
+              Use the arrow keys to move the camera right, left, up, and down. <br>
+              Use the +/- keys to move the camera forward and backward. <br>
+              Use the ws keys to tilt the camera up and down. <br>
+              Use the ad keys to spin the camera right and left 
+        </div>
+        <div>
+                Press "b" to change between lighting <br>
+                Press "v" to change between shading <br>
+                Use 1,2,3 to switch on/off the light sources <br>
+                Press "l" to change the distance dependency <br>
+                press 0 to change the material
+        </div>
+        </p>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+    <script src="./lib/materials_Ayerdi04.js"></script>
+    <script src="./lib/lights-JT01.js"></script>
+    <script src="./projC_lib3.js"></script>
+            
+    <script src="projC_4.js"></script>
+
+    
+    <hr>
+    <footer>
+        <br>
+        <table>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Follow</th>
+            </tr>
+            <tr>
+                <td>(815)999-5652</td>
+                <td>ariapuri2024@u.northwestern.edu</td>
+                <td><a href="www.linkedin.com/in/aria-puri-3b9249224" aria-label="linkedin website">LinkedIn</a></td>
+            </tr>
+        </table>
+    </footer>
+  </body>
+</html>

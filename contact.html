@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Final Project:Contact</title>
+  </head>
+  <body>
+    <nav>
+        <i class="material-icons">star_half</i>
+        <a href="index.html" class="home-name"><h1>ARIA PURI</h1></a>
+        <h2 class="home-occupation">Student</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="resume.html" aria-label="Resume">Resume</a></li>
+                <li>|</li>
+                <li class="dropdown">
+                    <a href="projects.html" aria-label="Projects">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="project1.html" aria-label="Project 1">Project 1</a>
+                        <a href="project2.html" aria-label="Project 2">Project 2</a>
+                      </div>
+                </li>
+                <li>|</li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-content">
+        <h1>Contact</h1>
+        <p>Looking forward to hearing from you!</p>
+        <br>
+        <h2>Phone</h2>
+        <p>(815)999-5652</p>
+        <h2>Email</h2>
+        <p>ariapuri2024@u.northwestern.edu</p>
+        <br>
+        <form action="mailto:ariapuri@gmail.com" method="post" enctype="text/plain">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <div class="message">
+                <label for="message">Message:</label><br>
+                <input type="text" id="message" name="message">
+            </div><br><br>
+            
+            <input id="submit" type="submit" value="Send">
+          </form>
+    </div>
+
+    <hr>
+    <footer>
+        <br>
+        <table>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Follow</th>
+            </tr>
+            <tr>
+                <td>(815)999-5652</td>
+                <td>ariapuri2024@u.northwestern.edu</td>
+                <td><a href="www.linkedin.com/in/aria-puri-3b9249224" aria-label="linkedin website">LinkedIn</a></td>
+            </tr>
+        </table>
+    </footer>
+  </body>
+</html>
